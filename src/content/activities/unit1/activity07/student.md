@@ -6,7 +6,7 @@ Uno de los ejemplos más emblemáticos de Diseño Generativo aplicado a los vide
 
 #### ¿Cómo se aplica el Diseño Generativo en "No Man's Sky"?
 
-**Algoritmos Procedurales:***
+**Algoritmos Procedurales:**
 
 - Se emplean algoritmos matemáticos para generar contenido en tiempo real en lugar de diseñarlo manualmente.
 - El motor del juego utiliza ecuaciones basadas en ruido perlin y algoritmos fractales para determinar elementos como la topografía, biomas y atmósferas.
