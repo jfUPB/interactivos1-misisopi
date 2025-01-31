@@ -50,4 +50,6 @@ function draw() {
   
 - Modificando size, las figuras pueden ser más grandes o pequeñas según la estética deseada.
 
+<img width="446" alt="image" src="https://github.com/user-attachments/assets/7f80f7e5-77b7-49cc-9ea3-23939d196b44" />
+
   
