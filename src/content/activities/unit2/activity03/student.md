@@ -55,8 +55,6 @@ while True:
 - display.show(): Muestra un texto o una imagen en la pantalla LED del micro:bit.
 
 ```py
-Copiar
-from microbit import *
 display.show("Hello")
 ```
 - pin0.write_digital(): Envía una señal digital de salida a un pin específico. Por ejemplo, para encender un LED conectado al pin P0.
