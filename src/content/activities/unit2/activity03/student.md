@@ -25,8 +25,6 @@
 - button_a.is_pressed(): Detecta si el botón A está presionado.
 
 ```py
-Copiar
-from microbit import *
 while True:
     if button_a.is_pressed():
         display.show('A')
@@ -34,8 +32,6 @@ while True:
 - accelerometer.get_x(), get_y(), get_z(): Estos métodos leen los valores de aceleración en los ejes X, Y y Z, permitiendo detectar la orientación y el movimiento del micro:bit.
 
 ```py
-Copiar
-from microbit import *
 while True:
     x = accelerometer.get_x()
     y = accelerometer.get_y()
@@ -47,8 +43,6 @@ while True:
 
 
 ```py
-Copiar
-from microbit import *
 while True:
     if pin0.read_digital():
         display.show('1')
@@ -68,15 +62,11 @@ display.show("Hello")
 - pin0.write_digital(): Envía una señal digital de salida a un pin específico. Por ejemplo, para encender un LED conectado al pin P0.
 
 ```py
-Copiar
-from microbit import *
 pin0.write_digital(1)  # Enciende el LED
 ```
 - music.play(): Utiliza el buzzer para reproducir sonidos. Permite emitir tonos a través del altavoz.
 
 ```py
-Copiar
-from microbit import *
 import music
 music.play(music.PYTHON)
 ```
