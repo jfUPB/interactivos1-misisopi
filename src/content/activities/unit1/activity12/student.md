@@ -97,7 +97,7 @@ while True:
     if button_a.is_pressed():
         display.show(images['1']) # muestra la imagen 1 presionando el botón A
     if button_b.is_pressed():
-        display.show(images['2']) # muestra la imagen 1 presionando el botón A
+        display.show(images['2']) # muestra la imagen 2 presionando el botón A
     if uart.any():  # Si hay datos en el puerto serial
         #data = uart.read(1).decode('utf-8')  // Leer el dato y decodificarlo, este se cita para experimentar
         data = uart.read(1) # lee el dato
