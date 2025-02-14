@@ -1,4 +1,4 @@
-### Solución
+# Solución
 
 #### ¿Qué querías comprobar?
 
