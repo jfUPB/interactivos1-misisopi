@@ -58,6 +58,7 @@ def tareaBomba():
         
         # Consumir el evento
         evento_ocurrido = False
+        sleep(500)
         evento_tipo = ''
     else:
         display.clear()
@@ -65,7 +66,6 @@ def tareaBomba():
 while True:
     tareaEventos()
     tareaBomba()
-    sleep(1000)
 ```
 
 ### Explicación
