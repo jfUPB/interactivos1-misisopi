@@ -1,6 +1,6 @@
 # Solución
 
-```py
+```js
 let tiempo = 20;
 let estado = 'configuracion'; // Estados: configuracion, armado, explosion
 
