@@ -17,3 +17,58 @@ let stepSize = 2;
 **noiseScale:** escala para el ruido Perlin (valores bajos = más suave).
 
 **stepSize:** espacio entre puntos en la dirección horizontal (X).
+
+```js
+function setup() {
+  createCanvas(800, 800);
+  noLoop();
+
+  for (let y = 0; y < height; y += 10) {
+    let line = [];
+    for (let x = 0; x < width; x += stepSize) {
+      let nx = x * noiseScale;
+      let ny = y * noiseScale;
+      let angle = noise(nx, ny) * TWO_PI;
+      let dy = sin(angle) * 10;
+
+      line.push(createVector(x, y + dy));
+    }
+    lines.push(line);
+  }
+}
+```
+
+- Se crea el lienzo 800x800.
+
+- Se generan múltiples líneas horizontales (espaciadas cada 10 píxeles en y).
+
+Para cada línea, se crean puntos que:
+
+- Están espaciados horizontalmente (x += stepSize).
+
+- Tienen una ligera variación en y basada en ruido Perlin (ruido suave).
+
+- Se usa sin(angle) para que la distorsión se vea más como una ondulación.
+
+- noise() genera valores entre 0 y 1 que se convierten en un ángulo entre 0 y 2π.
+
+```js
+function draw() {
+  background(255);
+  stroke(0);
+  noFill();
+
+  for (let line of lines) {
+    beginShape();
+    for (let v of line) {
+      vertex(v.x, v.y);
+    }
+    endShape();
+  }
+}
+```
+- Pone fondo blanco.
+
+- Dibuja cada línea con beginShape() → vertex() → endShape().
+
+- El resultado son muchas líneas suavemente onduladas.
