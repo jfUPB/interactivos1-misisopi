@@ -18,6 +18,8 @@ let stepSize = 2;
 
 **stepSize:** espacio entre puntos en la dirección horizontal (X).
 
+### Setup()
+
 ```js
 function setup() {
   createCanvas(800, 800);
@@ -52,6 +54,8 @@ Para cada línea, se crean puntos que:
 
 - noise() genera valores entre 0 y 1 que se convierten en un ángulo entre 0 y 2π.
 
+### Draw ()
+
 ```js
 function draw() {
   background(255);
@@ -72,3 +76,14 @@ function draw() {
 - Dibuja cada línea con beginShape() → vertex() → endShape().
 
 - El resultado son muchas líneas suavemente onduladas.
+
+## Experimentación
+
+### Mayor ruido (más desorden)
+
+```javascript
+let noiseScale = 0.02; // antes 0.005
+```
+
+
+
